@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIDEN E-sports Team</title>
+  <link rel="stylesheet" href="SIDEN/styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="SIDEN/SIDEN.jpg">
+</head>
+<body>
+  
+
+
+  <div class="tabs">
+    <a class="tablink" href="index.html">INTRODUCTION</a>
+    <a class="tablink" href="news.html">NEWS</a>
+    <a class="tablink" href="owner.html">OWNER</a>
+    <a class="tablink active" href="team.html">MEMBER</a>
+  </div>
+
+
+      <h3><strong><p><strong></strong></p>
+
+
+  <section class="section">
+    <h2>メンバー紹介</h2>
+    <div class="section">
+      <h2>FORTNITE競技部門</h2>
+      <div class="member-grid">
+        <div class="member">
+          <img src="SIDEN/pizaman.jpg" alt="pizaman">
+          <h3>pizaman</h3>
+          <p>進行,IGL,対面すべて最強</p>
+          <a href="https://twitter.com/piza_fn">Twitter</a>
+        </div>
+
+          <div class="member">
+            <img src="SIDEN/jaxx.jpg" alt="jaxx">
+            <h3>jaxx</h3>
+            <p>IGL,対面が得意</p>
+            <a href="https://twitter.com/SIDEN_jaxx">Twitter</a>
+          </div>
+        </div>
+      </div>
+      
+          <div class="section">
+      <h2>FORTNITE育成部門</h2>
+        <div class="member">
+          <img src="SIDEN/Rein.jpg" alt="rein">
+          <h3>rein</h3>
+          <p>最近キーマウに移行した。</p>
+          <a href="https://twitter.com/Reinn212116">Twitter</a>
+        </div>
+      </div>
+    </div>
+
+        <div class="section">
+      <h2>APEX LEJENDS部門</h2>
+        <div class="member">
+          <img src="SIDEN/sharp.jpg" alt="sharp">
+          <h3>sharp</h3>
+          <p>エイムが良い</p>
+          <a href="https://twitter.com/sharpGEBO6">Twitter</a>
+        </div>
+      </div>
+    </div>
+
+        <div class="section">
+      <h2>MINECRAFT部門</h2>
+        <div class="member">
+          <img src="SIDEN/alram.jpg" alt="alram">
+          <h3>alram</h3>
+          <p>建築がとても上手い</p>
+          <a href="https://twitter.com/alramk1ng">Twitter</a>
+        </div>
+      </div>
+    </div>
+
+        <div class="section">
+      <h2>SPLATOON部門</h2>
+        <div class="member">
+          <img src="SIDEN/nemuneko.jpg" alt="nemuneko">
+          <h3>nemuneko</h3>
+          <p>スプラトゥーンが上手い</p>
+          <a href="https://twitter.com/nemuneko_cat">Twitter</a>
+        </div>
+      </div>
+    </div>
+
+        <div class="section">
+      <h2>デザイナー部門</h2>
+      <div class="member-grid">
+        <div class="member">
+          <img src="SIDEN/nia.jpg" alt="nia">
+          <h3>nia</h3>
+          <p>絵がとても上手い</p>
+          <a href="https://twitter.com/aoi_04_1">Twitter</a>
+        </div>
+      </div>
+    </div>
+
+            
+      </section>
+
+    <script>
+      function handleFadeIn(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }
+    
+      const fadeInOptions = {
+        root: null,
+        threshold: 0.2, 
+      };
+    
+      const fadeInObserver = new IntersectionObserver(handleFadeIn, fadeInOptions);
+    
+      const memberElements = document.querySelectorAll('.member');
+      memberElements.forEach((element) => {
+        fadeInObserver.observe(element);
+      });
+    </script>
+    <script>
+    
+      function openTab(tabName) {
+        const sections = document.querySelectorAll('.section');
+        const tabs = document.querySelectorAll('.tablink');
+    
+        sections.forEach((section) => {
+          section.style.display = 'none';
+        });
+    
+        tabs.forEach((tab) => {
+          tab.classList.remove('active');
+        });
+    
+        const selectedTab = document.querySelector(`button[onclick="openTab('${tabName}')]`);
+        const selectedSection = document.querySelector(`.${tabName}`);
+    
+        if (selectedTab && selectedSection) {
+          selectedTab.classList.add('active');
+          selectedSection.style.display = 'block';
+        }
+      }
+    </script>
+    <footer>
+      <p>&copy; 2023 SIDEN E-sports Team. All rights reserved.</p>
+    </footer>
+  </body>
+  </html>
+  
