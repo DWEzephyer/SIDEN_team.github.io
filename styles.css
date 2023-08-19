@@ -1,0 +1,143 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0.1;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  
+  body {
+  overscroll-behavior: auto;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: #111111;
+  }
+  
+  header {
+  text-align: center;
+  padding: 6rem 0;
+  background-color: #000000;
+  color: #ff9900;
+  }
+  
+  header h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  }
+  
+  header p {
+  font-size: 1.8rem;
+  opacity: 0.9;
+  margin-bottom: 3rem;
+  }
+  
+  .tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #111111;
+  padding: 0.6rem 0;
+  }
+  
+  .tablink {
+  margin: 0 0.3rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding: 0.4rem 1rem;
+  border-radius: 0;
+  font-size: 0.8rem;
+  }
+  
+  .tablink.active {
+  color: #ff9900;
+  }
+
+  .section {
+    flex-wrap: wrap; /* 複数の行に要素を折り返す */
+    justify-content: space-between; /* 要素間のスペースを均等に分配 */
+    padding: 4.5rem;
+    background-color: #111111;
+    margin: 0.8rem 0;
+    border-radius: 16px;
+    box-shadow: 0 1px 8px #c21212;
+    text-align: justify;
+  }  
+  
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0px;
+  }
+  
+  .member {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0rem;
+  background-color: #111111;
+  border-radius: 10px;
+  margin: 0.8rem 0;
+  box-shadow: 0 1px 8px rgb(255, 0, 0);
+  transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1px 8px rgb(255, 0, 0);
+  }
+  
+  .member img {
+  width: 180px;
+  height: 180px;
+  border-radius: 80%;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ff0000;
+  }
+  
+  .member p {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+  }
+
+  .member a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  }
+  
+  .member a:hover {
+  color: #ff6600;
+  }
+  
+  footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  }
+
+  h2 {
+    color: #990000;
+    font-size: 42px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #990000;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .member h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+
+  
