@@ -55,7 +55,7 @@ body, h1, h2, h3, p, ul, li {
   }
   
   .tablink.active {
-  color: #ff9900;
+  color: #ffffff;
   }
 
   .section {
@@ -115,7 +115,7 @@ body, h1, h2, h3, p, ul, li {
   }
   
   .member a:hover {
-  color: #ff6600;
+  color: #ffffff;
   }
   
   footer {
